@@ -14,8 +14,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="img/greyalos-low-resolution-logo-white-on-transparent-background.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/Gerardo-R/CCT-maps-v1">
+    <img src="/readme/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">CCT-maps-v1 README</h3>
@@ -55,6 +55,8 @@
     <li><a href="#licencia">Licencia</a></li>
     <li><a href="#contacto">Contacto</a></li>
     <li><a href="#créditos">Créditos</a></li>
+    <li><a href="#importante">Importante</a></li>
+    <li><a href="#próximamente">Próximamente</a></li>
   </ol>
 </details>
 
@@ -154,54 +156,57 @@ Aquí se seleccionaron los siguientes filtros:
 * Sostenimiento: PUBLICO
 * Turno: VESPERTINO
 
-<br><br>
+<br>
 <a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-2.png">
-<img src="/readme/screenshot2.png" alt="screenshot2">
+<img src="/readme/screenshot-2.png" alt="screenshot2">
 </a>
 <br><br>
 
-Se muestran las opciones de la página a la que se quiere ir.
+Se puede notar también que debajo del botón Mapear hay un texto que indica la cantidad de marcadores mapeados. Por defecto el valor mostrado es 0, esto hasta que se mapean los marcadores.
+<br><br>
+Lo siguiente es dar clic en el botón Mapear para que los marcadores se carguen y se agreguen al mapa.
 <br>
-Como el formulario está en la página de Contacto se da clic en Contacto.
+Durante la carga de los marcadores en la pantalla se muestra un gif que indica que se está cargando el nuevo contenido del mapa, este gif se muestra durante la carga de los marcadores y desaparece una vez que estos se han terminado de cargar.
 <br><br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-principal_cursor-encima-de-contacto.png">
-<img src="/readme/greyalos-web_pagina-principal_cursor-encima-de-contacto.png" alt="screenshot3">
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-3.png">
+<img src="/readme/screenshot-3.png" alt="screenshot3">
 </a>
 <br><br>
 
-Esto dirige a la página de Contacto.
+Una vez terminada la carga de los marcadores estos son mostrados en el mapa. Aparecen agrupados indicando la cantidad de marcadores y se van mostrando el resto de marcadores conforme se hace zoom en el mapa.
 <br><br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-contacto.png">
-<img src="/readme/greyalos-web_pagina-contacto.png" alt="screenshot4">
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-4.png">
+<img src="/readme/screenshot-4.png" alt="screenshot4">
 </a>
 <br><br>
 
-Se rellenan los campos del formulario. Para este ejemplo se rellenó con los siguientes datos:
+Aqui se indica que hay 18 marcadores (18 centros de trabajo que cumplen con los filtros aplicados).
 <br>
- - Nombre: Gerardo.
- - Correo: gerardoreyna968@gmail.com.
- - Mensaje: Prueba de envío de formulario.
-<br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-contacto_formulario-rellenado.png">
-<img src="/readme/greyalos-web_pagina-contacto_formulario-rellenado.png" alt="screenshot5">
+Se hace zoom para ir mostrando los marcadores.
+<br><br>
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-5.png">
+<img src="/readme/screenshot-5.png" alt="screenshot5">
 </a>
 <br><br>
 
-Se da clic en el botón Enviar, lo cual dirige a la siguiente página que confirma que el formulario fue enviado.
+Se continúa haciendo zoom hasta poder marcadores individuales como en la siguiente imagen.
 <br><br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-contacto_formulario-enviado.png">
-<img src="/readme/greyalos-web_pagina-contacto_formulario-enviado.png" alt="screenshot6">
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-6.png">
+<img src="/readme/screenshot-6.png" alt="screenshot6">
 </a>
 <br><br>
 
-Se da clic en el texto que dice "Regresar al sitio original" para regresar a la página de Contacto.
+Se da clic en cualquier marcador para mostrar una pequeño pop-up con su información.
 <br><br>
-Eso es todo lo que hay que hacer para enviar un formulario.
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-7.png">
+<img src="/readme/screenshot-7.png" alt="screenshot7">
+</a>
 <br><br>
-Ahora para ver el formulario enviado se accede al cliente del correo utilizado para Formspree. Dentro se consulta la bandeja de entrada y se abre el correo del formulario recibido.
+
+Debajo de la información hay un hipervínculo que dirige a [Google Maps](https://www.google.com/maps/) donde se visualiza ese mismo marcador.
 <br><br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_correo-formulario-enviado.png">
-<img src="/readme/greyalos-web_correo-formulario-enviado.png" alt="screenshot7">
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-8.png">
+<img src="/readme/screenshot-8.png" alt="screenshot8">
 </a>
 <br><br>
 
@@ -247,9 +252,35 @@ Recursos utilizados.
 * [OpenStreetMap](https://www.openstreetmap.org/)
 * [Leaflet](https://leafletjs.com/)
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
+* [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster)
+* [Leaflet-ajax](https://github.com/calvinmetcalf/leaflet-ajax)
+* [Gif de cargando](https://tenor.com/es-419/search/loading-gif-transparent-background-gifs)
+* [Papa Parse](https://www.papaparse.com/)
+* [CCT 2022](https://datos.gob.mx/busca/dataset/catalogo-de-centros-de-trabajo-2022)
+* [Flaticon](https://www.flaticon.es/resultados?word=mapa)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+
+<!-- IMPORTANT -->
+## Importante
+
+IMPORTANTE:
+* Dependiendo de la cantidad de marcadores que se vayan a agregar el tiempo de carga puede ser más largo (aunque no mucho).
+* En algunos casos, habrá marcadores cuya ubicación no tenga coherencia con el resto de datos de los CCT, debido a que algunas coordenadas no son correctas.
+* Los datos obtenidos de los [CCT 2022](https://datos.gob.mx/busca/dataset/catalogo-de-centros-de-trabajo-2022) son oficiales, sin embargo, eso no significa que estén exentos de errores como se indicó en el punto anterior.
+* El [archivo CSV del CCT con transformación de datos](https://drive.google.com/file/d/1j1PDdbdFT9cfinIJrmiv-w6eAVhIMkpA/view?usp=sharing) es una modificación del catálogo [CCT 2022](https://datos.gob.mx/busca/dataset/catalogo-de-centros-de-trabajo-2022), se modificó el nombre de las columnas, el orden de las filas y se eliminaron algunas columnas no utilizadas para propósitos de este proyecto, sin embargo, el contenido de los registros del archivo original no se modificó (como el valor de las coordenadas para latitud y longitud, nombre del CCT, etc.); salvo por el reemplazo de letras con tilde por letras sin tilde, además de reemplazar la letra "Ñ" por "N", debido a que de lo contrario estos caracteres no se mostraban correctamente.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SOON -->
+## Próximamente
+
+PRÓXIMAMENTE:
+<br>
+Versión usando la [API de Google Maps](https://developers.google.com/maps/documentation/javascript?hl=es-419) (en cuanto pueda tener una tarjeta con la cual activar la facturación, ya que de lo contrario la API no puede usarse).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
