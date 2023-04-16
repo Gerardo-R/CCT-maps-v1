@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mapeando CCT del país</title>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/scriptold4.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" />
+    <script src="lib/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="lib/Leaflet.markercluster-1.4.1/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="lib/Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css" />
+    <script src="lib/Leaflet.markercluster-1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="lib/leaflet-ajax-gh-pages/dist/leaflet.ajax.min.js"></script>
+    <script src="lib/PapaParse-5.0.2/papaparse.min.js"></script>
+    <script src="https://kit.fontawesome.com/246562bb87.js" crossorigin="anonymous"></script>
+
+    <meta name="description" content="Selecciona filtros para mostrar marcadores">
+
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <h1>Mapeando CCT del país</h1>
+    </header>
+
+    <main>
+        <h3>Selecciona filtros para mostrar marcadores de CCT</h3>
+        <br>
+
+        <div class="map-form-container">
+            <div id="filter-form">
+                <form>
+                    <br>
+                    <div class="form-group">
+                        <label for="entidad"><i class="fa-solid fa-landmark"></i> Entidad:</label>
+                        <select class="form-control" id="entidad">
+                            <option value="TODOS">-- Selecciona una opción --</option>
+                            <!-- Aquí se agregarán las opciones de las entidades -->
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="nivel"><i class="fa-solid fa-school-flag"></i> Nivel:</label>
+                        <select class="form-control" id="nivel">
+                            <option value="TODOS">-- Selecciona una opción --</option>
+                            <!-- Aquí se agregarán las opciones de los niveles -->
+                            
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="ambito"><i class="fa-solid fa-tree-city"></i> Ámbito:</label>
+                        <select class="form-control" id="ambito">
+                            <option value="TODOS">-- Selecciona una opción --</option>
+                            <!-- Aquí se agregarán las opciones de los ámbitos -->
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="sostenimiento"><i class="fa-sharp fa-regular fa-dollar-sign"></i> Sostenimiento:</label>
+                        <select class="form-control" id="sostenimiento">
+                            <option value="TODOS">-- Selecciona una opción --</option>
+                            <!-- Aquí se agregarán las opciones de los sostenimientos -->
+                        </select>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <label for="turno"><i class="fa-solid fa-clock"></i> Turno:</label>
+                        <select class="form-control" id="turno">
+                            <option value="TODOS">-- Selecciona una opción --</option>
+                            <!-- Aquí se agregarán las opciones de los turnos -->
+                        </select>
+                    </div>
+                    <br>
+                    <!--
+                    <button type="button" class="btn btn-primary" id="map-btn" onclick="mapear()">    
+                    -->
+                    <button type="button" class="btn btn-primary" id="map-btn">
+                        MAPEAR <i class="fa-solid fa-map-location-dot"></i>
+                    </button>
+                    <br>
+                    <p>Mapeados: <span id="conteoValor">0</span></p>
+                </form>
+            </div>
+
+            <div id="map"></div>
+            </div>
+
+            <div id="loading-gif"><img src="img/loading.gif"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copy">
+            <a href="https://github.com/Gerardo-R" target="_blank" style="color: white; text-decoration: none;">©2023 Gerardo Reyna</a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            mapa();
+            llenarFiltros();
+        });
+        
+    </script>
+</body>
+
+</html>
