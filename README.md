@@ -1,4 +1,4 @@
-# GReyAlOs
+# CCT-maps-v1
 
 <a name="readme-top"></a>
 
@@ -18,19 +18,17 @@
     <img src="img/greyalos-low-resolution-logo-white-on-transparent-background.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">GReyAlOs-README</h3>
+  <h3 align="center">CCT-maps-v1 README</h3>
 
   <p align="center">
-    README de Sitio web de empresa ficticia "GReyAlOs" para la materia de Tecnologías Emergentes
+    README de proyecto CCT Maps (v1) para la materia de Tecnologías Emergentes.
     <br />
-    <a href="https://github.com/Gerardo-R/GReyAlOs"><strong>Explorar los documentos »</strong></a>
+    <a href="https://github.com/Gerardo-R/CCT-maps-v1"><strong>Explorar los documentos »</strong></a>
     <br />
     <br />
-    <a href="https://gerardo-r.github.io/GReyAlOs/">Ver Demo del Sitio Web</a>
+    <a href="https://github.com/Gerardo-R/CCT-maps-v1/issues">Reportar Error</a>
     ·
-    <a href="https://github.com/Gerardo-R/GReyAlOs/issues">Reportar Error</a>
-    ·
-    <a href="https://github.com/Gerardo-R/GReyAlOs/issues">Solicitar cambio</a>
+    <a href="https://github.com/Gerardo-R/CCT-maps-v1/issues">Solicitar cambio</a>
   </p>
 </div>
 
@@ -65,12 +63,12 @@
 <!-- ABOUT THE PROJECT -->
 ## Acerca del proyecto
 
-Proyecto de sitio web para una empresa de desarrollo de software a la medida, que implementa un formulario de correo con reCAPTCHA y que se envía gracias a Formspree.
-Es un trabajo para la materia Tecnologías Emergentes.
+Proyecto para la materia Tecnologías Emergentes donde se mapea el CCT (Catálogo de Centros de Trabajo) de México.
+Se usó OpenStreetMap y Leaflet para mostrar el mapa.
 <br>
 <br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-principal.png">
-<img src="/readme/greyalos-web_pagina-principal.png" alt="screenshot" >
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-1.png">
+<img src="/readme/screenshot-1.png" alt="screenshot1" >
 </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -85,8 +83,8 @@ This section should list any major frameworks/libraries used to bootstrap your p
 *   ![html5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 *   <img src="https://leafletjs.com/docs/images/logo.png" alt="Leaflet" width="100">
 *   <img src="https://www.openstreetmap.org/assets/osm_logo-4afddaae0230a5a46687fdc751ed256dfdccde144118cb02a7d7960f207a4b92.svg" alt="OpenStreetMap" height="50">
-*   <img src="https://repository-images.githubusercontent.com/24650294/4d804b80-7e39-11e9-82fe-07761d844a8c" alt="ReCAPTCHA-v3" height="50">
-*   <img src="https://formspree.io/img/formspree-new.svg/" alt="Formspree" height="50">
+*   ![Papa Parse](https://www.vectorlogo.zone/logos/papaparse/papaparse-ar21.svg)
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -99,42 +97,29 @@ This section should list any major frameworks/libraries used to bootstrap your p
 ### Prerrequisitos
 
 1. Tener instalado Visual Studio Code o cualquier otro software que permita abrir el proyecto y editar el código.
-2. Crear una cuenta en [Formspree](https://formspree.io/) y crear un nuevo proyecto.
-3. En el proyecto de Formspree, configurar la cuenta de correo a la que se enviarán los formularios.
-4. Entrar a [Font Awesome](https://fontawesome.com/start), ingresar nuestro email para registrarse en el sitio y recibir un código de kit de iconos gratuito.
+2. Tener instalado XAMPP o algún software similar que funcione como servidor local (localhost) para poder ejecutar el proyecto.
+3. Entrar a [Font Awesome](https://fontawesome.com/start), ingresar nuestro email para registrarse en el sitio y recibir un código de kit de iconos gratuito.
 
 
 ### Instalación
 
 A continuación se describen los pasos para la correcta instalación del proyecto.
 
-1. Clonar o [descargar](https://github.com/Gerardo-R/GReyAlOs/archive/refs/heads/main.zip) el repositorio.
+1. Clonar o [descargar](https://github.com/Gerardo-R/CCT-maps-v1/archive/refs/heads/main.zip) el repositorio.
 
 ```sh
   git clone Gerardo-R/GReyAlOs
 ```
 
-2. En el archivo "contacto.html":
+2. En el archivo "index.html":
    - Reemplazar el código de kit obtenido de Font Awesome:  
    ```html
       <script src="https://kit.fontawesome.com/codigo.js" crossorigin="anonymous"></script>
    ```  
-   - Reemplazar el código de formulario de Formspree con el obtenido al crear un proyecto en Formspree:  
-   ```html
-    <form id="contact-form" action="https://formspree.io/f/codigo" method="post">
-   ```
   
- 3. Entrar a [reCAPTCHA admin](https://www.google.com/recaptcha/admin/create) y rellenar el formulario para obtener credenciales para reCAPTCHA v3. En el formulario hay que agregar el dominio que tendrá el sitio web publicado para que funcione reCAPTCHA.
- 
-4. En el archivo "contacto.html":
-   - Reemplazar la clave del sitio con la obtenida a través de reCAPTCHA:  
-  ```html
-    <script src="https://www.google.com/recaptcha/api.js?render=clave-de-sitio"></script>
-    ...
-    <button class="g-recaptcha" data-sitekey="clave-de-sitio" data-callback='onSubmit' data-action='submit'>Enviar</button>
-  ```
-  
- 5. Publicar el sitio web.
+3. Descargar las librerías faltantes: [Leaflet.markercluster](https://github.com/Leaflet/Leaflet.markercluster/archive/v1.4.1.zip) y [Papa Parse](https://github.com/mholt/PapaParse/archive/5.0.2.zip) y colocar sus carpetas descomprimidas dentro de la carpeta "lib" del proyecto.
+
+4. Descargar el [archivo CSV del CCT con transformación de datos](https://drive.google.com/file/d/1j1PDdbdFT9cfinIJrmiv-w6eAVhIMkpA/view?usp=sharing) y colocarlo en la carpeta "datos" del proyecto.
   
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -144,22 +129,34 @@ A continuación se describen los pasos para la correcta instalación del proyect
 <!-- USAGE EXAMPLES -->
 ## Uso
 
-A continuación se presenta la manera en que funciona el sitio web, específicamente sobre el envío del formulario.
+A continuación se presenta la manera en que funciona el proyecto.
 <br>
-Para ver la demostración del sitio web completo ver el siguiente [video](https://youtu.be/6xTIjFRxwJw)
+Para ver una pequeña demostración del proyecto ver el siguiente [video](https://youtu.be/v1PyDFM-inQ)
 <br><br>
 
-Primero se ingresa al sitio de "[GReyAlOs](https://gerardo-r.github.io/GReyAlOs/)".
+Primero se enciende nuestro servidor local XAMPP (o cualquier otro) y se accede a la dirección en donde se tenga el proyecto.
+<br>
+Se observa que el mapa carga pero no muestra marcadores, esto es porque primero se tienen que aplicar los filtros para mostrarlos.
 <br><br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-principal.png">
-<img src="/readme/greyalos-web_pagina-principal.png" alt="screenshot1">
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-1.png">
+<img src="/readme/screenshot-1.png" alt="screenshot1" >
 </a>
 <br><br>
 
-Se da clic en el botón del menú lateral para mostrar las opciones.
+Se tienen filtros de "Entidad", "Nivel", "Ámbito", "Sostenimiento" y "Turno" para los marcadores a mostrar y un botón para "Mapear".
+<br>
+Este botón lo que hace es agregar al mapa los marcadores que cumplen las condiciones dadas por los filtros.
 <br><br>
-<a href="https://github.com/Gerardo-R/GReyAlOs/blob/main/readme/greyalos-web_pagina-principal_menu-lateral-resaltado.png">
-<img src="/readme/greyalos-web_pagina-principal_menu-lateral-resaltado.png" alt="screenshot2">
+Aquí se seleccionaron los siguientes filtros:
+* Entidad: DURANGO
+* Nivel: SECUNDARIA
+* Ámbito: URBANO
+* Sostenimiento: PUBLICO
+* Turno: VESPERTINO
+
+<br><br>
+<a href="https://github.com/Gerardo-R/CCT-maps-v1/blob/main/readme/screenshot-2.png">
+<img src="/readme/screenshot2.png" alt="screenshot2">
 </a>
 <br><br>
 
@@ -230,7 +227,7 @@ Gerardo Reyna - gerardoreyna968@gmail.com
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=flat-square&logo=YouTube&logoColor=white)](https://www.youtube.com/channel/UC4uYKo9XeQSIg8iU2KhtQFQ)
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=Instagram&logoColor=white)](https://www.instagram.com/zillamxxn/)
 
-Link del proyecto: [https://github.com/Gerardo-R/GReyAlOs](https://github.com/Gerardo-R/GReyAlOs)
+Link del proyecto: [https://github.com/Gerardo-R/CCT-maps-v1](https://github.com/Gerardo-R/CCT-maps-v1)
 <br>
 Perfil de GitHub: [Gerardo-R](https://github.com/Gerardo-R/)
 
@@ -247,11 +244,9 @@ Recursos utilizados.
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
-* [Agregar reCAPTCHA v3 a formulario](https://www.youtube.com/watch?v=LVN0dOcoEnE)
-* [Editor de video](https://www.kapwing.com/)
-* [Formspree](https://formspree.io/)
 * [OpenStreetMap](https://www.openstreetmap.org/)
 * [Leaflet](https://leafletjs.com/)
+* [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -259,16 +254,16 @@ Recursos utilizados.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Gerardo-R/GReyAlOs.svg?style=for-the-badge
-[contributors-url]: https://github.com/Gerardo-R/GReyAlOs/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Gerardo-R/GReyAlOs.svg?style=for-the-badge
-[forks-url]: https://github.com/Gerardo-R/GReyAlOs/network/members
-[stars-shield]: https://img.shields.io/github/stars/Gerardo-R/GReyAlOs.svg?style=for-the-badge
-[stars-url]: https://github.com/Gerardo-R/GReyAlOs/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Gerardo-R/GReyAlOs.svg?style=for-the-badge
-[issues-url]: https://github.com/Gerardo-R/GReyAlOs/issues
-[license-shield]: https://img.shields.io/github/license/Gerardo-R/GReyAlOs.svg?style=for-the-badge
-[license-url]: https://github.com/Gerardo-R/GReyAlOs/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/Gerardo-R/CCT-maps-v1.svg?style=for-the-badge
+[contributors-url]: https://github.com/Gerardo-R/CCT-maps-v1/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Gerardo-R/CCT-maps-v1.svg?style=for-the-badge
+[forks-url]: https://github.com/Gerardo-R/CCT-maps-v1/network/members
+[stars-shield]: https://img.shields.io/github/stars/Gerardo-R/CCT-maps-v1.svg?style=for-the-badge
+[stars-url]: https://github.com/Gerardo-R/CCT-maps-v1/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Gerardo-R/CCT-maps-v1.svg?style=for-the-badge
+[issues-url]: https://github.com/Gerardo-R/CCT-maps-v1/issues
+[license-shield]: https://img.shields.io/github/license/Gerardo-R/CCT-maps-v1.svg?style=for-the-badge
+[license-url]: https://github.com/Gerardo-R/CCT-maps-v1/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/gerardo-reyna-199964193/
 [product-screenshot]: images/screenshot.png
